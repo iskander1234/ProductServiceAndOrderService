@@ -8,17 +8,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5438c0b-3381-436f-b65f-89d57854e022" name="Changes" comment="Добавил файл gitignore">
-      <change afterPath="$PROJECT_DIR$/ProductService/Domain/Entities/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/Domain/Interfaces/IProductRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/Infrastructure/Persistence/ProductDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/Infrastructure/Repositories/ProductRepository.cs" afterDir="false" />
+    <list default="true" id="b5438c0b-3381-436f-b65f-89d57854e022" name="Changes" comment="Настройл Entity, DbContext, Repository, Program.cs, БД">
+      <change afterPath="$PROJECT_DIR$/ProductService/API/Controllers/ProductController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/Application/Commands/CreateProductCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/Application/Commands/DecreaseStockHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/Application/Commands/DeleteProductCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/Application/Commands/UpdateProductHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProductService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProductService/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/Controllers/WeatherForecastController.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProductService/ProductService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/ProductService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +90,7 @@
       <updated>1738675236393</updated>
       <workItem from="1738675238163" duration="17000" />
       <workItem from="1738675337020" duration="318000" />
-      <workItem from="1738675679995" duration="2169000" />
+      <workItem from="1738675679995" duration="2912000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил файл gitignore">
       <option name="closed" value="true" />
@@ -103,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738675770599</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Настройл Entity, DbContext, Repository, Program.cs, БД">
+      <option name="closed" value="true" />
+      <created>1738677983557</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738677983557</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +120,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Добавил файл gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил файл gitignore" />
+    <MESSAGE value="Настройл Entity, DbContext, Repository, Program.cs, БД" />
+    <option name="LAST_COMMIT_MESSAGE" value="Настройл Entity, DbContext, Repository, Program.cs, БД" />
   </component>
 </project>

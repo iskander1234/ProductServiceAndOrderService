@@ -7,6 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="6.2.1" />
+        <PackageReference Include="MediatR" Version="6.0.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.10">
           <PrivateAssets>all</PrivateAssets>
@@ -21,8 +23,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="API\Controllers\" />
-      <Folder Include="Application\Commands\" />
       <Folder Include="Application\Queries\" />
     </ItemGroup>
 
