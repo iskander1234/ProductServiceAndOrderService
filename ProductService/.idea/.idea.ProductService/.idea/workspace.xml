@@ -8,10 +8,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5438c0b-3381-436f-b65f-89d57854e022" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/ProductService/.gitignore" afterDir="false" />
+    <list default="true" id="b5438c0b-3381-436f-b65f-89d57854e022" name="Changes" comment="Добавил файл gitignore">
+      <change afterPath="$PROJECT_DIR$/ProductService/Domain/Entities/Product.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/Domain/Interfaces/IProductRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/Infrastructure/Persistence/ProductDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/Infrastructure/Repositories/ProductRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProductService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProductService/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/Controllers/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/ProductService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/ProductService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +93,17 @@
       <updated>1738675236393</updated>
       <workItem from="1738675238163" duration="17000" />
       <workItem from="1738675337020" duration="318000" />
-      <workItem from="1738675679995" duration="64000" />
+      <workItem from="1738675679995" duration="2169000" />
     </task>
+    <task id="LOCAL-00001" summary="Добавил файл gitignore">
+      <option name="closed" value="true" />
+      <created>1738675770599</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738675770599</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +114,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Добавил файл gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил файл gitignore" />
   </component>
 </project>
