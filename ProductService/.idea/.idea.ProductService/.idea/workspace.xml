@@ -8,14 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5438c0b-3381-436f-b65f-89d57854e022" name="Changes" comment="Настройл Entity, DbContext, Repository, Program.cs, БД">
-      <change afterPath="$PROJECT_DIR$/ProductService/API/Controllers/ProductController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/Application/Commands/CreateProductCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/Application/Commands/DecreaseStockHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/Application/Commands/DeleteProductCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/Application/Commands/UpdateProductHandler.cs" afterDir="false" />
+    <list default="true" id="b5438c0b-3381-436f-b65f-89d57854e022" name="Changes" comment="Migrations DB">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProductService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProductService/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProductService/ProductService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/ProductService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/Properties/launchSettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,19 +32,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.ProductService.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ProductService">
     <configuration name="ProductService" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ProductService/ProductService.csproj" />
@@ -90,7 +88,7 @@
       <updated>1738675236393</updated>
       <workItem from="1738675238163" duration="17000" />
       <workItem from="1738675337020" duration="318000" />
-      <workItem from="1738675679995" duration="2912000" />
+      <workItem from="1738675679995" duration="3540000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил файл gitignore">
       <option name="closed" value="true" />
@@ -108,7 +106,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738677983557</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавлены CQRS-команды Создан контроллер ProductController с API-методами.">
+      <option name="closed" value="true" />
+      <created>1738678783753</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738678783753</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Migrations DB">
+      <option name="closed" value="true" />
+      <created>1738678820727</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738678820727</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +135,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Добавил файл gitignore" />
     <MESSAGE value="Настройл Entity, DbContext, Repository, Program.cs, БД" />
-    <option name="LAST_COMMIT_MESSAGE" value="Настройл Entity, DbContext, Repository, Program.cs, БД" />
+    <MESSAGE value="Добавлены CQRS-команды Создан контроллер ProductController с API-методами." />
+    <MESSAGE value="Migrations DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrations DB" />
   </component>
 </project>
