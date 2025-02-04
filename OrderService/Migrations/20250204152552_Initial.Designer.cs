@@ -12,7 +12,7 @@ using OrderService.Infrastructure.Persistence;
 namespace OrderService.Migrations
 {
     [DbContext(typeof(OrderDbContext))]
-    [Migration("20250204145710_Initial")]
+    [Migration("20250204152552_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

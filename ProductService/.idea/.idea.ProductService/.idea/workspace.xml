@@ -10,21 +10,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5438c0b-3381-436f-b65f-89d57854e022" name="Changes" comment="Orderservice Initial Commit">
-      <change afterPath="$PROJECT_DIR$/../OrderService/API/Controllers/OrderController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OrderService/Application/Commands/CancelOrderCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OrderService/Application/Commands/CreateOrderCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OrderService/Application/DTOs/OrderItemDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OrderService/Domain/Entities/Order.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OrderService/Domain/Entities/OrderItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OrderService/Domain/Interfaces/IOrderRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OrderService/Infrastructure/Persistence/OrderDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OrderService/Infrastructure/Repositories/OrderRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService.csproj" afterDir="false" />
+    <list default="true" id="b5438c0b-3381-436f-b65f-89d57854e022" name="Changes" comment="Реализованы модели данных, база данных, репозиторий, CQRS-команды и контроллер заказов.">
+      <change afterPath="$PROJECT_DIR$/../OrderService/Domain/Interfaces/IProductServiceClient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OrderService/Infrastructure/Services/ProductServiceClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/Application/Commands/CreateOrderCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/Application/Commands/CreateOrderCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/Migrations/20250204145710_Initial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/Migrations/20250204145710_Initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/Migrations/OrderDbContextModelSnapshot.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../OrderService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OrderService/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProductService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProductService/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/API/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/API/Controllers/ProductController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/Application/Commands/DecreaseStockHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/Application/Commands/DecreaseStockHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/Migrations/20250204140342_Initial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/Migrations/20250204140342_Initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/Migrations/ProductDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +132,7 @@
       <updated>1738675236393</updated>
       <workItem from="1738675238163" duration="17000" />
       <workItem from="1738675337020" duration="318000" />
-      <workItem from="1738675679995" duration="5931000" />
+      <workItem from="1738675679995" duration="8289000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил файл gitignore">
       <option name="closed" value="true" />
@@ -181,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738679460797</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Реализованы модели данных, база данных, репозиторий, CQRS-команды и контроллер заказов.">
+      <option name="closed" value="true" />
+      <created>1738681720405</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738681720405</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +207,7 @@
     <MESSAGE value="Migrations DB" />
     <MESSAGE value="MediatR За регестрировал" />
     <MESSAGE value="Orderservice Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Orderservice Initial Commit" />
+    <MESSAGE value="Реализованы модели данных, база данных, репозиторий, CQRS-команды и контроллер заказов." />
+    <option name="LAST_COMMIT_MESSAGE" value="Реализованы модели данных, база данных, репозиторий, CQRS-команды и контроллер заказов." />
   </component>
 </project>

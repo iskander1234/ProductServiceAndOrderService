@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProductService.Application.Commands
 {
-    public record DecreaseStockCommand(Guid ProductId, int Quantity) : IRequest;
+    public record DecreaseStockCommand(Guid ProductId, int Quantity) : IRequest<bool>;
 
-    public class DecreaseStockHandler : IRequestHandler<DecreaseStockCommand, Unit>
+    public class DecreaseStockHandler : IRequestHandler<DecreaseStockCommand, bool>
     {
         private readonly IProductRepository _repository;
 
@@ -17,19 +17,15 @@ namespace ProductService.Application.Commands
             _repository = repository;
         }
 
-        public async Task<Unit> Handle(DecreaseStockCommand request, CancellationToken cancellationToken)
+        public async Task<bool> Handle(DecreaseStockCommand request, CancellationToken cancellationToken)
         {
             var product = await _repository.GetByIdAsync(request.ProductId);
-            if (product == null) throw new Exception("Product not found");
-
-            if (product.StockQuantity < request.Quantity)
-                throw new Exception("Not enough stock available");
+            if (product == null || product.StockQuantity < request.Quantity)
+                return false; // Вернем false, если товара недостаточно
 
             product.StockQuantity -= request.Quantity;
-
             await _repository.UpdateAsync(product);
-
-            return Unit.Value; // Возвращаем Unit.Value вместо void
+            return true; // Успешное уменьшение товара
         }
     }
 }

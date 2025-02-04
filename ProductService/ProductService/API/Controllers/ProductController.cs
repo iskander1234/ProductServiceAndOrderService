@@ -39,12 +39,18 @@ namespace ProductService.API.Controllers
             return NoContent();
         }
 
-        [HttpPut("{id}/decrease-stock/{quantity}")]
-        public async Task<IActionResult> DecreaseStock(Guid id, int quantity)
+        [HttpPut("{id}/decrease-stock")]
+        public async Task<IActionResult> DecreaseStock(Guid id, [FromBody] int quantity)
         {
-            await _mediator.Send(new DecreaseStockCommand(id, quantity));
-            return NoContent();
+            var result = await _mediator.Send(new DecreaseStockCommand(id, quantity));
+
+            if (result != default)
+                return NoContent(); // Если успех, возвращаем HTTP 204
+
+            return BadRequest("Not enough stock or product not found"); //  Ошибка, вернем 400 BadRequest
         }
+
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(Guid id)

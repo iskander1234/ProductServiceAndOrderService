@@ -12,7 +12,7 @@ using ProductService.Infrastructure.Persistence;
 namespace ProductService.Migrations
 {
     [DbContext(typeof(ProductDbContext))]
-    [Migration("20250204140342_Initial")]
+    [Migration("20250204152519_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
